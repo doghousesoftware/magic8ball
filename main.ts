@@ -43,16 +43,30 @@ function waiting () {
         `)
     basic.pause(200)
 }
-// values of fortunes from 0 to 7 (8 total)
+/**
+ * values of fortunes from the Original Magic 8 Ball
+ */
 let text_list: string[] = []
 text_list = [
-"Not Today",
-"My sources say Yes",
-"Ask again later",
-"Possibly tomorrow",
-"Never in a million years",
-"When pigs fly",
-"For sure - not",
-"Because no, wait, no"
+"It is certain.",
+"It is decidedly so.",
+"Without a doubt.",
+"Yes definitely.",
+"You may rely on it.",
+"As I see it, yes.",
+"Most likely.",
+"Outlook good.",
+"Yes.",
+"Signs point to yes.",
+"Reply hazy, try again.",
+"Ask again later.",
+"Better not tell you now.",
+"Cannot predict now.",
+"Concentrate and ask again.",
+"Don't count on it.",
+"My reply is no.",
+"My sources say no.",
+"Outlook not so good.",
+"Very doubtful."
 ]
 basic.showString("?")
