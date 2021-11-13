@@ -1,8 +1,10 @@
+// any action event works
 input.onButtonPressed(Button.A, function () {
     waiting()
     serial.writeLine("" + (text_list[randint(0, text_list.length - 1)]))
     basic.showString("?")
 })
+// animation
 function waiting () {
     basic.showLeds(`
         . . . . .
@@ -41,6 +43,7 @@ function waiting () {
         `)
     basic.pause(200)
 }
+// values of fortunes from 0 to 7 (8 total)
 let text_list: string[] = []
 text_list = [
 "Not Today",
